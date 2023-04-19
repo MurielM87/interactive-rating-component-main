@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 15px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Overpass", sans-serif;
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+p {
+    color: hsl(217, 12%, 63%);
+    line-height: 30px;
+}
+
+.card,
+.thank-you_card {
+    width: 30%;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: hsl(213, 19%, 18%);
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsl(213, 19%, 24%);
+    padding: 1rem;
+}
+.btn_number {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.card .btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(213, 19%, 24%);
+    color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card .btn:hover {
+    background-color: hsl(25, 97%, 53%);
+}
+.card .btn:focus {
+    background-color: hsl(216, 12%, 54%);
+}
+.btnSubmit {
+    border: none;
+    border-radius: 30px;
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btnSubmit:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+}
+.thank-you_card img {
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+}
+.thank-you_card h1 {
+    text-align: center;
+}
+.thank-you_card .selection {
+    border-radius: 30px;
+    width: 60%;
+    padding: 10px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: hsl(213, 19%, 24%);
+    color: hsl(25, 97%, 53%);
+}
+.thank-you_card p {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    color: hsl(213, 19%, 18%);
+}
+.attribution a {
+    color: hsl(216, 12%, 54%);
+}
+
+@media screen and (max-width: 375px) {
+    .card,
+    .thank-you_card {
+        width: 90%;
+    }
+
+    .thank-you_card .selection {
+        width: 75%;
+    }
+}
